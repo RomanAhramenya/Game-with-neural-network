@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+.robot,.human{
+        
+        width: 80px;
+        height: 130px;
+        background-color: rgb(122, 106, 106);
+        margin: 0px auto;
+        text-align: center;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+}
+.robot{
+    margin-bottom: 50px;
+}
+.board{
+   padding: 20px;
+    background-color: green;
+}
+.moneyRobot,.moneyHuman{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(255, 238, 0);
+    text-align: center;
+}
+.cash{
+    height: 20px;
+    width: 100px;
+    margin: 10px auto;
+    background-color: darkgrey;
+    text-align: center;
+    margin-bottom: 50px
+}
+
+@keyframes opened {
+    0%{transform: rotateY(0deg); background-color: rgb(122, 106, 106);color: rgb(122, 106, 106) }
+    95%{background-color: rgb(122, 106, 106);color: rgb(122, 106, 106) ;}
+    100%{transform: rotateY(180deg); background-color: white; color: black;}
+}
+.open{
+    background-color: white;
+    animation: opened 1s linear;
+}
+.text{
+    margin: 0 auto;
+    width: 150px;
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.help{
+    font-size: 30px;
+}
